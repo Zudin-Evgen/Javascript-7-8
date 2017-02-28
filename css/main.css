@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 14px 'Verdana';
+  padding-bottom: 1000px;
+}
+
+ul{
+  list-style: none;
+  border-radius: 20px 20px 0 0;
+  background: #001942;
+}
+
+ul::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul a {
+  float: left;
+  padding: 15px;
+  font-size: 17px;
+}
+
+#tabs {
+  float: left;
+  width: 500px;
+  margin: 20px 0 0 20px;
+  position: relative;
+}
+
+[id*="tabs-"] {
+  position: absolute;
+  left: 0;
+  top: 46px;
+  background: #d0daea;
+  color: #001942;
+  padding: 10px;
+  display: none;
+}
+
+#tabs-1 {
+  display: block;
+}
+
+ul li:first-child a {
+  border-radius: 16px 0 0 0;
+  background: #d0daea;
+  color:#001942;
+}
+
+form {
+  margin: 20px 0 0 30px;
+  float: left;
+}
+
+fieldset {
+    padding: 30px;
+    width: 500px;
+}
+
+label {
+  float: left;
+  display: block;
+  width: 100px;
+}
+
+fieldset div::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+fieldset div {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+input {
+  float: left;
+}
+
+button[type="button"] {
+  padding: 20px;
+  background: grey;
+  border: 0;
+  font: 16px 'Verdana';
+}
+
+.tooltip {
+  position: absolute;
+  left: 300px;
+  top: 0;
+  padding: 5px;
+  float: left;
+  width: 150px;
+  box-shadow: 0 0 10px;
+  transition: opacity 3s;
+}
